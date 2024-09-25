@@ -41,17 +41,99 @@
         </div>
       </nav>
     </header>
-    <!-- end of navbar -->
-    <!-- home -->
-    <section id="banner">
-      <div class="banner-text">
-        <h1 style="text-align: center">
-          Welcome to the place where natural food and flavour are born
-        </h1>
-      </div>
+    <section id="services">
+        <div class="tittle">
+          <div class="tittle-text">
+            <h1 style="color: #fff">services</h1>
+          </div>
+          <div class="tittle-underline"></div>
+        </div>
+        <div class="services-container">
+          <div class="service-item service-item-black">
+            <div class="front-text">
+              <ion-icon
+                name="leaf"
+                style="width: 50px; height: 50px; color: rgb(25, 121, 25)"
+              ></ion-icon>
+              <h1>Planting of seeds</h1>
+            </div>
+            <div class="back-text">
+              <h1>Planting of seeds</h1>
+              <p>planting of maize,yam,irish,saya beans,Groundnut</p>
+              <button type="button">Read More</button>
+            </div>
+          </div>
+          <div class="service-item service-item-white">
+            <div class="front-text">
+              <i class="icon-c">
+                <ion-icon
+                  name="cellular-sharp"
+                  style="width: 50px; height: 50px; color: rgb(25, 121, 25)"
+                ></ion-icon>
+              </i>
+              <h1>Investment</h1>
+            </div>
+            <div class="back-text">
+              <h1>Investment</h1>
+              <p>Grow your wealth through our Investment plans</p>
+              <button type="button">Read More</button>
+            </div>
+          </div>
+          <div class="service-item service-item-black">
+            <div class="front-text">
+              <i class="icon-c">
+                <ion-icon
+                  name="checkmark-outline"
+                  style="width: 50px; height: 50px; color: rgb(25, 121, 25)"
+                ></ion-icon>
+              </i>
+              <h1>Exportation</h1>
+            </div>
+            <div class="back-text">
+              <h1>Exportation</h1>
+              <p>Exportation of farm produce</p>
+              <button type="button">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="services-container">
+          <div class="service-item service-item-white">
+            <div class="front-text">
+              <i class="icon-c">
+                <ion-icon
+                  name="basket-outline"
+                  style="width: 50px; height: 50px; color: rgb(25, 121, 25)"
+                ></ion-icon>
+              </i>
+              <h1>sales of feeds</h1>
+            </div>
+            <div class="back-text">
+              <h1>sales of feeds</h1>
+              <p>sales of fish feeds,animalsfeeds ,etc.</p>
+              <button type="button">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="services-container">
+          <div class="service-item service-item-black">
+            <div class="front-text">
+              <i class="icon-c">
+                <ion-icon
+                  name="cart-outline"
+                  style="width: 50px; height: 50px; color: rgb(25, 121, 25)"
+                ></ion-icon>
+              </i>
+              <h1>Distribution</h1>
+            </div>
+            <div class="back-text">
+              <h1>Distribution</h1>
+              <p>Distribution of herbicides,farm produce and fertilizer.</p>
+              <button type="button">Read More</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
-    <!-- end of home  -->
-    <!-- Footer -->
     <footer
       id="footer-contact"
       class="text-center text-lg-start bg-body-tertiary text-muted"
@@ -143,7 +225,10 @@
     ></script>
 
     <script>
-      
+        document.querySelector(".hamburger").addEventListener("click", function () {
+  document.querySelector(".nav-links").classList.toggle("active");
+});
+
     </script>
   </body>
 </html>

@@ -41,17 +41,28 @@
         </div>
       </nav>
     </header>
-    <!-- end of navbar -->
-    <!-- home -->
-    <section id="banner">
-      <div class="banner-text">
-        <h1 style="text-align: center">
-          Welcome to the place where natural food and flavour are born
-        </h1>
+    <section id="About">
+      <div class="tittle">
+        <div class="tittle-text">
+          <h1>About Us</h1>
+          <div class="tittle-underline"></div>
+        </div>
+      </div>
+      <div class="about-section">
+        <div class="about-image">
+          <img src="olu.jfif" alt="About Us Image" />
+        </div>
+        <div class="about-content">
+          <h2>De'Heirs Agro-Industry</h2>
+          <p>
+            De'Heirs Agro-Industry is a Nigerian registered company focusing on
+            tackling food scarcity through sustainable agriculture, providing
+            high-quality fertilizer, herbicides, and exporting farm produce.
+          </p>
+          <a href="#" class="learn-more-btn">Learn More</a>
+        </div>
       </div>
     </section>
-    <!-- end of home  -->
-    <!-- Footer -->
     <footer
       id="footer-contact"
       class="text-center text-lg-start bg-body-tertiary text-muted"
@@ -143,7 +154,11 @@
     ></script>
 
     <script>
-      
+      document
+        .querySelector(".hamburger")
+        .addEventListener("click", function () {
+          document.querySelector(".nav-links").classList.toggle("active");
+        });
     </script>
   </body>
 </html>

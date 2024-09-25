@@ -41,17 +41,6 @@
         </div>
       </nav>
     </header>
-    <!-- end of navbar -->
-    <!-- home -->
-    <section id="banner">
-      <div class="banner-text">
-        <h1 style="text-align: center">
-          Welcome to the place where natural food and flavour are born
-        </h1>
-      </div>
-    </section>
-    <!-- end of home  -->
-    <!-- Footer -->
     <footer
       id="footer-contact"
       class="text-center text-lg-start bg-body-tertiary text-muted"
@@ -130,7 +119,6 @@
       </div>
       <!-- Copyright -->
     </footer>
-
     <!-- Icon and Bootstrap Scripts -->
     <script
       type="module"
@@ -142,8 +130,11 @@
       crossorigin="anonymous"
     ></script>
 
-    <script>
-      
+    <script >
+        document.querySelector(".hamburger").addEventListener("click", function () {
+  document.querySelector(".nav-links").classList.toggle("active");
+});
+
     </script>
   </body>
 </html>
