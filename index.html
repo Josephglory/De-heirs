@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="logo.jpg " type="image/x-icon">
     <title>De'Heirs Agro-Industry - Tackling Food Scarcity | Plant, Sell, Export, Invest</title>
 </title>
-<link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
 <link
 href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
 rel="stylesheet"
@@ -27,14 +27,15 @@ crossorigin="anonymous"
         </div>
         <ul class="nav-links">
           <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#skills">skills</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#footer-contact">Contact</a></li>
         </ul>
-        <div class="hamburger" onclick="toggleMenu()">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+        <div class="hamburger" id="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
         </div>
       </nav>
     </header>
@@ -75,14 +76,15 @@ crossorigin="anonymous"
               <h1 >skills</h1>
               <div class="tittle-underline"></div>
             </div>
-      <section id="skills">        <div class="skills-container">
+      <section id="skills">  
+              <div class="skills-container">
           <div class="skills-items">
             <img
               src="plant.jpg"
               alt=""
               style="width: 60px; height: 60px; color: rgb(25, 121, 25)"
             />
-            <h1>WE PLANT</h1>
+            <h1  style="color: #fff;">WE PLANT</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
               debitis animi culpa expedita dignissimos at, libero facere sunt
@@ -96,7 +98,7 @@ crossorigin="anonymous"
               alt=""
               style="width: 60px; height: 60px; color: rgb(25, 121, 25)"
             />
-            <h1>WE SELL</h1>
+            <h1 style="color: #fff;">WE SELL</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
               debitis animi culpa expedita dignissimos at, libero facere sunt
@@ -110,7 +112,7 @@ crossorigin="anonymous"
               alt=""
               style="width: 60px; height: 60px; color: rgb(25, 121, 25)"
             />
-            <h1>WE EXPORT</h1>
+            <h1 style="color: #fff;">WE EXPORT</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
               debitis animi culpa expedita dignissimos at, libero facere sunt
@@ -124,7 +126,7 @@ crossorigin="anonymous"
               alt=""
               style="width: 60px; height: 60px; color: rgb(25, 121, 25)"
             />
-            <h1>WE INVEST</h1>
+            <h1 style="color: #fff;">WE INVEST</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
               debitis animi culpa expedita dignissimos at, libero facere sunt
@@ -147,12 +149,11 @@ crossorigin="anonymous"
         <div class="services-container">
           <div class="service-item service-item-black">
             <div class="front-text">
-              <i class="icon-c">
-                <ion-icon
-                  name="cog-outline"
-                  style="width: 50px; height: 50px; color: rgb(25, 121, 25)"
-                ></ion-icon>
-              </i>
+              <ion-icon
+               name="leaf"
+              style="width: 50px; height: 50px; color: rgb(25, 121, 25)"
+            ></ion-icon>
+          </i>
               <h1>
                 Planting of seeds
               </h1>
@@ -169,7 +170,7 @@ crossorigin="anonymous"
             <div class="front-text">
               <i class="icon-c">
                 <ion-icon
-                  name="pencil-outline"
+               name="cellular-sharp"
                   style="width: 50px; height: 50px; color: rgb(25, 121, 25)"
                 ></ion-icon>
               </i>
@@ -187,8 +188,8 @@ crossorigin="anonymous"
             <div class="front-text">
               <i class="icon-c">
                 <ion-icon
-                  name="stats-chart-outline"
-                  style="width: 50px; height: 50px; color: #fff"
+                name="checkmark-outline"
+                  style="width: 50px; height: 50px; color: rgb(25, 121, 25)"
                 ></ion-icon>
               </i>
               <h1>Exportation</h1>
@@ -207,131 +208,123 @@ crossorigin="anonymous"
               <div class="front-text">
                 <i class="icon-c">
                   <ion-icon
-                    name="cog-outline"
+                  name="basket-outline"
                     style="width: 50px; height: 50px; color: rgb(25, 121, 25)"
                   ></ion-icon>
                 </i>
                 <h1>
-                  Planting of seeds
+                  sales of feeds
                 </h1>
               </div>
               <div class="back-text">
-                <h1> Planting of seeds </h1>
+                <h1> sales of feeds </h1>
                 <p>
-                  planting of maize,yam,irish,saya beans,Groundnut
+                  sales of fish feeds,animalsfeeds ,etc.
                 </p>
                 <button type="button">Read More</button>
               </div>
             </div> 
-      </section>
+            </div>
+            <div class="services-container">
+              <div class="service-item service-item-black">
+                <div class="front-text">
+                  <i class="icon-c">
+                    <ion-icon
+                     name="cart-outline"
+                      style="width: 50px; height: 50px; color: rgb(25, 121, 25)"
+                    ></ion-icon>
+                  </i>
+                  <h1>
+                    Distribution
+                  </h1>
+                </div>
+                <div class="back-text">
+                  <h1> Distribution </h1>
+                  <p>
+                    Distribution of herbicides,farm produce and fertilizer.
+                  </p>
+                  <button type="button">Read More</button>
+                </div>
+              </div> 
+              </div>
+      </section id="footer">
       <!--end service section -->
       <!-- footer -->
       
     <!-- Footer -->
-    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+     <section>
+
+      <footer id="footer-contact" class="text-center text-lg-start bg-body-tertiary text-muted">
         <!-- Section: Social media -->
         <section class="d-flex justify-content-center p-4 border-bottom">
-          <!-- Left -->
-          <div class="me-5 d-none d-lg-block">
-            <span style="color:  rgb(25, 121, 25)"
-              >Get connected with us on social networks:</span
-            >
-          </div>
-          <!-- Left -->
-  
           <!-- Right -->
-          <div>
-            <a href="#" class="me-4 text-reset">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-            <a href="#" class="me-4 text-reset">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-            <a href="#" class="me-4 text-reset">
-                <i class='bx bxl-whatsapp'></i>
-            </a>
-            
-            <a href="mailto:josephglory242@gmail.com" class="me-4 text-reset">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </div>
-          <!-- Right -->
-        </section>
-        <!-- Section: Social media -->
-  
-        <!-- Section: Links  -->
-        <section>
-          <div class="container text-center text-md-start mt-5">
-            <!-- Grid row -->
-            <div class="row mt-3">
-              <!-- Grid column -->
-              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                <h6 class="text-uppercase fw-bold mb-4">Joseph Glory</h6>
-                <p>
-                  Here you can use rows and columns to organize your footer
-                  content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit.
-                </p>
-              </div>
-              <!-- Grid column -->
-  
-              <!-- Grid column -->
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                <h6 class="text-uppercase fw-bold mb-4">Products</h6>
-                <p><a href="#!" class="text-reset">HTML</a></p>
-                <p><a href="#!" class="text-reset">CSS</a></p>
-                <p><a href="#!" class="text-reset">JavaScript</a></p>
-                <p><a href="#!" class="text-reset">Bootstrap</a></p>
-              </div>
-              <!-- Grid column -->
-  
-              <!-- Grid column -->
-              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
-                <p><a href="#!" class="text-reset">Pricing</a></p>
-                <p><a href="#!" class="text-reset">Settings</a></p>
-                <p><a href="#!" class="text-reset">Orders</a></p>
-                <p><a href="#!" class="text-reset">Help</a></p>
-              </div>
-              <!-- Grid column -->
-  
-              <!-- Grid column -->
-              
-              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                <p><i class="fas fa-home me-3"></i> surulere, kabba, NIGERIA</p>
-                <p><i class="fas fa-envelope me-3"></i> info@example.com</p>
-                <p><i class="fas fa-phone me-3"></i> + 234 9065199645</p>
-              </div>
-              <!-- Grid column -->
+     </section>
+      <!-- Section: Social media -->
+    
+      <!-- Section: Links -->
+      <section>
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Products column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+              <p><a href="#!" class="text-reset">HTML</a></p>
+              <p><a href="#!" class="text-reset">CSS</a></p>
+              <p><a href="#!" class="text-reset">JavaScript</a></p>
+              <p><a href="#!" class="text-reset">Bootstrap</a></p>
             </div>
-            <!-- Grid row -->
+    
+            <!-- Useful links column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+              <p><a href="#!" class="text-reset">Pricing</a></p>
+              <p><a href="#!" class="text-reset">Settings</a></p>
+              <p><a href="#!" class="text-reset">Orders</a></p>
+              <p><a href="#!" class="text-reset">Help</a></p>
+            </div>
+    
+            <!-- Contact column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><i class="fas fa-home me-3"></i>Lagos, NIGERIA</p>
+              <p><i class="fas fa-phone me-3"></i>+234 9065199645</p>
+              <div>
+                <a href="https://www.facebook.com/profile.php?id=100086309654928&mibextid=LQQJ4d" class="me-4 text-reset">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+                <a href="https://www.instagram.com/deheirs_agro?igsh=em54OTE2emdoNnhv&utm_source=qr" class="me-4 text-reset">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+                <a href="https://wa.me/2349065199645" class="me-4 text-reset">
+                  <i class='bx bxl-whatsapp'></i>
+                </a>
+                <a href="mailto:oluyemialabi28@gmail.com" class="me-4 text-reset">
+                  <i class='bx bxl-gmail'></i>
+                </a>
+                <div class="me-5 d-none d-lg-block">
+                  <span>connect with us on social networks</span>
+                </div>
+              </div>
+            </div>
           </div>
-        </section>
-        <!-- Section: Links  -->
-  
-        <!-- Copyright -->
-        <div
-          class="text-center p-4"
-          style="background-color: transparent; color: rgb(25, 121, 25) "
-        >
-          © 2024 Copyright:
-          <a class="text-reset fw-bold" href="#"></a>
+          <!-- Grid row -->
         </div>
-        <!-- Copyright -->
-      </footer>
-      <!-- End of Footer -->
-  
-      <!-- end of footer -->
-      <script
-        type="module"
-        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-      ></script>
-      <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+      </section>
+      <!-- Section: Links -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-4" style="background-color: transparent;">
+        © 2024 Copyright:
+        <a class="text-reset fw-bold" href="#"></a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    
+    <!-- Icon and Bootstrap Scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
       <script src="js.js"></script>
     </body>
   </html>

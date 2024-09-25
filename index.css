@@ -57,15 +57,22 @@
   display: none; /* Initially hidden on larger screens */
   cursor: pointer;
   flex-direction: column;
-  gap: 5px;
-  background-color: rgb(25, 121, 25);
-  color: rgb(25, 121, 25);
+  justify-content: space-between; /* Evenly space the bars */
+  width: 30px; /* Width of the hamburger icon */
+  height: 22px; /* Height to accommodate three bars */
 }
 
 .hamburger .bar {
-  width: 25px;
+  width: 100%;
   height: 3px;
-  color: rgb(25, 121, 25);
+  background-color: rgb(25, 121, 25); /* Color of the bars */
+  transition: 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
 }
 
 /* Responsive Design */
@@ -258,7 +265,7 @@
   display: inline-block;
   padding: 10px 20px;
   background-color: rgb(25, 121, 25);
-  color: #fff;
+  color: #000;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
@@ -267,6 +274,7 @@
 
 .learn-more-btn:hover {
   background-color: rgb(25, 121, 25);
+  color: #fff;
 }
 /*#######*/
 .tittle-text {
@@ -326,6 +334,7 @@
 .front-text {
   z-index: 2; /* Ensures front text stays on top */
   transition: transform 1s, opacity 0.5s; /* Smoothly transition opacity */
+  text-transform: uppercase;
 }
 
 .back-text {
@@ -377,77 +386,58 @@
   opacity: 1; /* Make the back text visible */
 }
 /* ######## */
-
-#filler-contact {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(grains.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 60px;
-  align-items: baseline;
+footer {
+  background-color: #000 !important; /* Black background */
+  color: #fff; /* White text */
 }
 
-#filler-contact h1 {
-  font-size: 30px;
-  text-transform: uppercase;
-  color: #e0e2bd;
-  margin-bottom: 10px;
-}
-#filler-contact button {
-  font-size: 30px;
-  text-transform: uppercase;
-  color: rgb(25, 121, 25);
-  border: 2px solid rgb(25, 121, 25);
-  padding: 10px 15px;
-  background: #fff;
-  transform: scaleX(1.1);
-  text-decoration: none;
+footer a {
+  color: #fff; /* White links */
+  text-decoration: none; /* Remove underline */
 }
 
-#filler-contact button:hover {
-  background: transparent;
-  color: #fff;
+footer a:hover {
+  color: #ddd; /* Light gray hover color for links */
 }
 
-/*###### */
-
-#footer {
-  background-color: #191716;
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: baseline;
-  text-align: center;
+footer .border-bottom {
+  border-color: #fff !important; /* White border for social section */
 }
 
-.footer-text {
-  text-transform: uppercase;
-  font-size: 15px;
-  color: #e0e2db;
-  margin-top: 10px;
+footer .fas,
+footer ion-icon,
+footer i.bx {
+  font-size: 1.2rem; /* Adjust icon size */
 }
 
-.footer-icons {
-  font-size: 30px;
-  margin-top: 10px;
+footer .fas:hover,
+footer ion-icon:hover,
+footer i.bx:hover {
+  color: #ddd; /* Light gray hover for icons */
+}
+/* Footer icon styling */
+
+footer ion-icon,
+footer i.bx,
+footer .fas {
+  font-size: 1.8rem; /* Increase icon size */
+  font-weight: bold; /* Bold icons where applicable */
+  color: #fff; /* Ensure icons are white */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effect */
 }
 
-.footer-icons a {
-  margin-right: 10px;
-  color: #e0e2db;
-  transition: opacity 4s, transform 0.3s;
+footer ion-icon:hover,
+footer i.bx:hover,
+footer .fas:hover {
+  color: #ddd; /* Lighter color on hover */
+  transform: scale(1.2); /* Slight enlargement on hover */
 }
 
-.footer-icons a:hover {
-  color: rgb(25, 121, 25);
-  transform: translateY(-5px);
+footer ion-icon,
+footer i.bx {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Optional subtle shadow for depth */
 }
+
 /* @media */
 
 @media (max-width: 768px) {
